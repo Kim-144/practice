@@ -10,6 +10,8 @@
     return val;
   };
 
+
+
   /**
   * COLLECTIONS
   * ===========
@@ -340,7 +342,8 @@
   _.flatten = function (nestedArray, result) {
     result = [];
     for (let i = 0; i < nestedArray.length; i++) {
-      if (!Array.isArray(nestedArray[i])) {git
+      if (!Array.isArray(nestedArray[i])) {
+        git
         result.push(nestedArray[i]);
       } else {
         result = result.concat(_.flatten(nestedArray[i]));
